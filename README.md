@@ -47,6 +47,7 @@ metadata:
   labels:
     app: led-app
   name: led-app
+  namespace: default
 spec:
   replicas: 1
   selector:
