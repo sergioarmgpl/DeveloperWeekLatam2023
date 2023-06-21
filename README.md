@@ -108,4 +108,4 @@ kubectl logs deploy/source-controller -n flux-system -f
 10. Edit the variable COLOR in the file clusters/mycluster/manifests/led-app.yaml to RED or GREEN, the commit and push the changes, and watch the led blinking in the 
 color you set.
 
-
+Note: Check the final result of this commands in the link: https://github.com/sergioarmgpl/developerweek-demo
