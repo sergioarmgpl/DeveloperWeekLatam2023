@@ -95,10 +95,17 @@ $ git push origin main
 ```
 $ kubectl rollout status deploy
 $ kubectl rollout status deployment led-app
+or
+$ watch kubectl get deploy
 ```
 
-9. Edit the variable COLOR in the file clusters/mycluster/manifests/led-app.yaml to 
-RED or GREEN, the commit and push the changes, and watch the led blinking in the 
+9. To check logs inside Flux when a change happens run
+```
+kubectl logs deploy/source-controller -n flux-system -f
+```
+
+
+10. Edit the variable COLOR in the file clusters/mycluster/manifests/led-app.yaml to RED or GREEN, the commit and push the changes, and watch the led blinking in the 
 color you set.
 
 
