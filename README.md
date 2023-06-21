@@ -39,7 +39,7 @@ $ cd developerweek-demo
 6. Create the new deployment
 ```
 $ mkdir -p ./clusters/mycluster/manifests
-$ cat << EOF >> ./clusters/mycluster/manifests/led-app.yaml
+$ cat << EOF > ./clusters/mycluster/manifests/led-app.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
